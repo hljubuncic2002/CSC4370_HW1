@@ -1,0 +1,169 @@
+body {
+    background-image: url("cityBG.jpg");
+    background-size: 3500px;
+    display: grid;
+    font-family: sans-serif;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+/* navBar */
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    place-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+}
+
+.navBar a {
+    font-size: 24px;
+    z-index: -1;
+    text-decoration: none;
+    color: hotpink;
+}
+
+a:visited {
+    text-decoration: none;
+    color: purple;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+
+.quote h1 {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 36px;
+    color: black;
+}
+
+.quote h2 {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    padding-left: 500px;
+}
+
+
+
+/* grid */
+
+.gridContainer {
+    padding-left: 240px;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    gap: 40px;
+}
+
+/* ROW 1 - Picture in first row */
+
+.portraitBox {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: inline-block;
+    border: 2px black;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.portraitBox img {
+    float: left;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 50px;
+    border-radius: 20%;
+}
+
+.portraitBox h3 {
+    padding-left: 60%;
+}
+
+.portraitBox li {
+    padding-bottom: 10px;
+}
+
+/* Hobby list in row 1 */
+
+.tableOutline {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: inline-block;
+    border: 2px black;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.tableOutline h3 {
+    text-align: center;
+}
+
+.tableOutline li {
+    padding-bottom: 10px;
+}
+
+/* ROW 2 - Zebra List */
+
+.zebraTable {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15px;
+
+}
+
+.zebraTable tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.zebraTable th, td {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.career {
+    grid-row: 2;
+    /* grid-row-end: ; */
+    grid-column-start: 3;
+    grid-column-end: 6;
+    border: 2px black;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 20px;
+}
+
+
+.career header {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.career > div {
+    display: inline-flex;
+}
+.career > a {
+    padding-left: 40%;
+}
+
+.career mark {
+    background-color: lightpink;
+}
